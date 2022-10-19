@@ -83,7 +83,7 @@ public class Slimefinder {
         else if(y==r&&dir=='w'){dir = 'a';}
             else if(y<=(-r)&&dir=='s'){dir = 'd';r++;}
             if(calcPos(x,y)[0]>=min){
-                System.out.println("Found a point with "+calcPos(x,y)[0]+"absolute chunks using "+calcPos(x,y)[1]+"partial chunks in x: "+x+" and y: "+y);
+                System.out.println("Found a point with "+calcPos(x,y)[0]+" absolute chunks using "+calcPos(x,y)[1]+" partial chunks in x: "+x+" and y: "+y);
                 searching = false;
             }
         }
