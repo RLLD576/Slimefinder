@@ -34,7 +34,7 @@ Then the program asks you the other parameters
 Have the launch.bat end the jar file and double-click in the bat.
 The bat script  will do a loop executing the jar file without having to set the seed each time.
 
-#### Do your own API:
+#### How to do your own API:
 
 You can download the source code from github, the file slimefinder.java in the core folder has the slimefinder class with all the methods used in the main file. You can create your own user interface according to your needs
 
