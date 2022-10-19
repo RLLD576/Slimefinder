@@ -1,5 +1,7 @@
 # Slimefinder
 ### Slimefinder v1.0 for all minecraft java versions
+[slimefinder-v1.0](https://github.com/RLLD/slimefinder/releases/download/v1.0/Slimefinder.zip)\
+
 #### Modes:
 
 **-h:** Show this message
