@@ -23,7 +23,9 @@ public class main
                 finder.search(seed,searchR,minChunks);
                 break;
             case "-o":
+                System.out.println("Insert x pos of the chunk");
                 chunkX = sc.nextInt();
+                System.out.println("Insert y pos of the chunk");
                 chunkY = sc.nextInt();
                 if(finder.isSlimeChunk(seed,chunkX,chunkY)){
                     System.out.println("Chunk x: "+chunkX+" y: "+chunkY+" is a slime chunk");
