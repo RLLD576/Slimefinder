@@ -1,5 +1,5 @@
 # Slimefinder
-### Slimefinder v1.0 for all minecraft java versions
+### Good slime chunks clusters for all minecraft java versions
 [slimefinder-v1.0](https://github.com/RLLD576/slimefinder/releases/download/v1.0/Slimefinder.zip)
 
 #### Modes:
