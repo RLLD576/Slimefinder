@@ -28,7 +28,7 @@ public class Slimefinder {
         this.seed = seed;
         for(int chunkX = -searchR;chunkX < searchR;chunkX++){
             for (int chunkY = -searchR;chunkY < searchR;chunkY++){
-                float[] a = calcPos(chunkX,chunkY);
+                float[] a = calcPos(chunkX,chunkY,seed);
                 float nchunks = a[0];
                 if(nchunks > minChunks){
                     System.out.println("Find a position with "+nchunks+" chunks "+"using "+a[1]+" partial chunks in chunk position x= "+chunkX+", y= "+chunkY+"   ");
@@ -43,7 +43,7 @@ public class Slimefinder {
         int x = 0,y = 0;
         for(int chunkX = -searchR;chunkX < searchR;chunkX++){
             for (int chunkY = -searchR;chunkY < searchR;chunkY++){
-                float[] a = calcPos(chunkX,chunkY);
+                float[] a = calcPos(chunkX,chunkY,seed);
                 float nchunks = a[0];
                 if(nchunks > best){
                     best = nchunks;
@@ -82,13 +82,14 @@ public class Slimefinder {
             else if(x==(-r)&&dir=='a'){dir = 's';}
         else if(y==r&&dir=='w'){dir = 'a';}
             else if(y<=(-r)&&dir=='s'){dir = 'd';r++;}
-            if(calcPos(x,y)[0]>=min){
-                System.out.println("Found a point with "+calcPos(x,y)[0]+" absolute chunks using "+calcPos(x,y)[1]+" partial chunks in x: "+x+" and y: "+y);
+            if(calcPos(x,y,seed)[0]>=min){
+                System.out.println("Found a point with "+calcPos(x,y,seed)[0]+"absolute chunks using "+calcPos(x,y,seed)[1]+"partial chunks in x: "+x+" and y: "+y);
                 searching = false;
             }
         }
         }
-    public float[] calcPos(int chunkX,int chunkY){
+    public float[] calcPos(int chunkX,int chunkY,long seed){
+        this.seed = seed;
         float count = 0.0f;
         float countc = 0.0f;
         for(int i = -9;i<9;i++){
