@@ -43,7 +43,7 @@ public class main
                 int x = sc.nextInt();
                 System.out.println("Insert y: ");
                 int y = sc.nextInt();
-                float[] point = finder.calcPos(x,y);
+                float[] point = finder.calcPos(x,y,seed);
                 System.out.println(point[0]);
                 System.out.println(point[1]);
                 System.out.println("The afk point has "+point[0]+" absolute chunks and "+point[1]+" partial chunks.");
