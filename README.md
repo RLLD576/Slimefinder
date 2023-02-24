@@ -2,6 +2,7 @@
 ### Slime chunks clusters finder for all minecraft java versions
 [slimefinder-v1.0](https://github.com/RLLD576/slimefinder/releases/download/v1.0/Slimefinder.zip)
 
+[slimefinder-v1.1](https://github.com/RLLD576/Slimefinder/releases/download/v1.1/Slimefinder_v1.1.zip) (Small change with the seed in -z)
 #### Modes:
 
 **-h:** Show this message
